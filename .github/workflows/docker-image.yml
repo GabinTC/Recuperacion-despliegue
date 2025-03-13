@@ -29,7 +29,7 @@ jobs:
         name: Build and push clock
         uses: docker/build-push-action@v6
         with:
-          context: ../../pomodoro-clock
+          context: ./pomodoro-clock/
           push: true
           tags: gabintc/clock:latest
       
@@ -37,6 +37,6 @@ jobs:
         name: Build and push simongame
         uses: docker/build-push-action@v6
         with:
-          context: ../../Simon-Game
+          context: ./Simon-Game/
           push: true
           tags: gabintc/simongame:latest
